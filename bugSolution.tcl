@@ -1,0 +1,1 @@
+proc goodproc {x} {  if {$x == 0} {    return 1  } elseif {$x < 0} {    return 0; # Handle negative input  }  return [goodproc [expr {$x - 1}]]}puts [goodproc 10]puts [goodproc -5]
